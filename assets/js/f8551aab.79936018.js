@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[39],{111:function(e,n,a){"use strict";a.r(n),a.d(n,"default",(function(){return l}));var t=a(0),c=a.n(t),u=a(122);function l(){return c.a.createElement(u.a,null,c.a.createElement("h1",null,"My React page"),c.a.createElement("p",null,"This is a React page"))}}}]);
