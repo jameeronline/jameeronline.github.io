@@ -93,11 +93,11 @@
             //Add dynamic id values
             $(this).attr('id', 'given_date_' + index);
             var el = $('#given_date_' + index);
-            var startDate = new Date($(this).data('start').replace(' ', 'T'));
-            $('#start_date').html($(this).data('start'));
-            $('#iphone_date_1').html(new Date('2021-03-11 21:50:10'));
-            $('#iphone_date_2').html(new Date('2021/03/11 21:50:10'));
-            var endDate = new Date($(this).data('end'));
+            var startDate = new Date($(this).data('start').replace(/-/g, '/'));
+            // $('#start_date').html($(this).data('start'));
+            // $('#iphone_date_1').html(new Date('2021-03-11 21:50:10'));
+            // $('#iphone_date_2').html(new Date('2021/03/11 21:50:10'));
+            var endDate = new Date($(this).data('end').replace(/-/g, '/'));
             $(el).countdowntimer({
                 startDate: startDate,
                 dateAndTime: endDate,
