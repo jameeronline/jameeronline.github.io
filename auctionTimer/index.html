@@ -91,7 +91,7 @@
             //Add dynamic id values
             $(this).attr('id', 'given_date_' + index);
             var el = $('#given_date_' + index);
-            var startDate = new Date($(this).data('start'));
+            var startDate = new Date($(this).data('start')).replace(' ', 'T');
             $('#start_date').html(startDate);
             var endDate = new Date($(this).data('end'));
             $(el).countdowntimer({
