@@ -63,6 +63,7 @@
             </div>
         </div>
     </div> -->
+    <div id="start_date"></div>
     <div class="given_date hide" data-start="2021-03-11 21:50:10" data-end="2021-03-12 23:00:00"></div>
     <hr />
     <div class="given_date" data-start="2021-03-11 21:50:10" data-end="2021-03-13 23:30:00"></div>
@@ -91,6 +92,7 @@
             $(this).attr('id', 'given_date_' + index);
             var el = $('#given_date_' + index);
             var startDate = new Date($(this).data('start'));
+            $('#start_date').html(startDate);
             var endDate = new Date($(this).data('end'));
             $(el).countdowntimer({
                 startDate: startDate,
