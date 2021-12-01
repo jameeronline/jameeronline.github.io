@@ -92,8 +92,8 @@
             $(this).attr('id', 'given_date_' + index);
             var el = $('#given_date_' + index);
             console.log($(this).data('start'));
-            var startDate = new Date($(this).data('start').slice(0, -4).replace(/-/g, '/'));
-            var endDate = new Date($(this).data('end').slice(0, -2).replace(/-/g, '/'));
+            var startDate = new Date($(this).data('start').slice(0, 19).replace(/-/g, '/'));
+            var endDate = new Date($(this).data('end').slice(0, 19).replace(/-/g, '/'));
             console.log(startDate);
             console.log(endDate);
             $(el).countdowntimer({
